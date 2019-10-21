@@ -12,7 +12,7 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToMany(mappedBy = "liked_posts")
+    @ManyToMany(mappedBy = "likedPosts")
     private List<User> likingUsers = new ArrayList<>();
 
     public Post() {
