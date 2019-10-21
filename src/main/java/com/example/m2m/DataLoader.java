@@ -25,6 +25,7 @@ public class DataLoader implements ApplicationRunner{
         user.setLikedPosts(Arrays.asList(post));
         userRepository.save(user);
         userRepository.delete(user);
+        // only post remains :)
     }
 
 
