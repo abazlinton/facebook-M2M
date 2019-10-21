@@ -16,9 +16,10 @@ public class User {
     @JoinTable(
             name = "likes",
             joinColumns = {
-            @JoinColumn(name = "user_id")}, inverseJoinColumns = {
+                    @JoinColumn(name = "user_id")},
+            inverseJoinColumns = {
                     @JoinColumn(name = "post_id")
-    })
+             })
     private List<Post> likedPosts = new ArrayList<>();
 
     public User() {
